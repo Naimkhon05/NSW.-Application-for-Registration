@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application for Registration</title>
+    <link rel="stylesheet" href="plw.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img
+          id="logo"
+          src="https://logowik.com/content/uploads/images/nsw-government-health-pathology2659.logowik.com.webp"
+        />
+        <p id="Tfnsw">Transport for NSW</p>
+
+        <h1>Application for Registration</h1>
+        <hr />
+
+        <p id="p2">
+          To find out the steps to register a vehicle, please read page 4 of
+          this form.
+        </p>
+
+        <fieldset>
+          <p>Office use only</p>
+          <label for="Plate number">Plate number issued/allocated</label><br />
+          <input type="number" name="Plate number" id="Plate number" /><br />
+          <label for="Attachments">Attachments</label><br />
+          <input type="text" name="Attachments" id="Attachments" />
+        </fieldset>
+
+        <hr />
+        <p>1.Is the vehicle to be registered in the name of:</p>
+        <label for="person">a person</label>
+        <input type="radio" name="1quest" id="person" /><br />
+        <label for="corp">a corporation</label>
+        <input type="radio" name="1quest" id="corpo" />&nbsp;&nbsp; now go to 3
+
+        <p>
+          2.To register a vehicle in your name you must be at least 16 years of
+          age for a light vehicle (i.e. 4.5 tonnes GVM or less) and at least 18
+          years of age for a heavy vehicle (i.e. more than 4.5 tonnes GVM)
+        </p>
+
+        <label for="Cn">NSW Driver Licence/Customer number</label><br />
+        <input type="number" name="Cn" id="Cn" /><br />
+        <label for="surname">Surname</label><br />
+        <input type="text" name="surn" id="surn" /><br />
+        <label for="gname">Given name(s)</label><br />
+        <input type="text" name="gname" id="gname" />
+
+        <p>
+          Legal and renewal notices will be sent to the residential address
+          below unless an alternative mailing address is nominated. You must
+          notify Service NSW of your new residential and mailing address within
+          14 days of moving.
+        </p>
+
+        <labe for="resaddress">Residential address</labe><br />
+        <input type="text" name="resaddress" id="resaddress" size="30" /><br />
+        <input type="text" name="state" id="state" size="30" />
+        <label for="state">State</label>&nbsp;&nbsp;&nbsp;
+        <label for="pcode">Postcode</label>
+        <input type="text" name="state" id="state" /><br /><br />
+
+        <label for="mailaddress"
+          >Mailing address (If different from residential address. <br />
+          All mail will be posted to this address.)</label
+        >
+        <br />
+        <input
+          type="text"
+          name="mailaddress"
+          id="mailaddress"
+          size="30"
+        /><br />
+        <input type="text" name="stat" id="stat" size="30" />
+        <label for="stat">State</label>&nbsp;&nbsp;&nbsp;
+        <label for="postcode">Postcode</label>
+        <input type="text" name="postcode" id="postcode" /><br /><br />
+
+        <label for="birthday">Date of birth</label><br />
+        <input type="date" name="birthday" id="birth" /><br /><br />
+
+        <label for="abn">ABN (if applicable)</label><br />
+        <input type="number" name="abn" id="abn" /> <br />
+        <br />
+
+        <span>Gender</span> &nbsp;&nbsp;&nbsp;
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="male" />&nbsp;&nbsp;&nbsp;
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="female" /><br /><br />
+
+        <p>
+          If you would like to register for an online service account, go to
+          service.nsw.gov.au for more information.
+        </p>
+        <br /><br />
+
+        <label for="email">Email address</label><br />
+        <input type="email" name="email" id="mail" size="30" /><br /><br />
+
+        <label for="phnumber">Mobile number</label><br />
+        <input
+          type="number"
+          name="phnumber"
+          id="mobnumber"
+          pattern="+ (0-9) {2,3}
+    (0-9){3} (0-9){3} (0-9){3} "
+        />
+        <br /><br />
+
+        <label for="anothername"
+          >Have you previously conducted business with Transport forNSW in
+          another name? If 'yes' please specify</label
+        ><br />
+        <input type="text" name="anothername" id="aname" /><br /><br />
+
+        <p>
+          To record a courtesy name go to 4, if vehicle is to be leased or
+          managed go to 5, if not go to 6.
+        </p>
+        <p style="text-align: center">
+          OFFICIAL:<br />Sensitive – Personal (when completed)
+        </p>
+      </div>
+      <!--Here starts my right div-->
+      <div class="right">
+        <p>
+          3.Corporation details<br />If the vehicle is being registered in the
+          name of a corporation, the representative authority must be filled in.
+          For a company, the director or an authorised delegate must complete
+          and sign the representative section. In the case of an incorporated
+          association, it is the public officer who must sign. In all cases, the
+          authorised representative must provide proof of their identity.
+        </p>
+
+        <label for="Cnumber">Customer number (if issued)</label><br />
+        <input type="number" name="Cnumber" id="Custnum" /> <br /><br />
+
+        <label for="Name">Name</label><br />
+        <input type="text" name="Name" id="Name" /><br />
+        <input type="text" name="Name" id="Name" /><br /><br />
+
+        <label for="Baddress">Business address</label><br />
+        <input type="text" name="Baddress" id="Baddress" />
+        <input type="text" name="Baddress" id="Baddress" />
+      </div>
+    </div>
+  </body>
+</html>
